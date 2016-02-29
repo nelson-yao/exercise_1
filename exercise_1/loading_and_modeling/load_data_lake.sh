@@ -1,13 +1,13 @@
 #!/bin/bash
 ## as root
 
-
+cd /home/w205/hospital_compare
 ## replace spaces in file names with underscore “_”
 for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
 
 ##change file names
 
-cd /home/w205/hospital_compare
+
 mv hvbp_hcahps_05_28_2015.csv surveys_responses.csv 
 mv Hospital_General_Information.csv hospitals.csv
 mv Timely_and_Effective_Care_-_Hospital.csv effective_care.csv
